@@ -1,0 +1,130 @@
+<?php
+
+$student = 2;
+
+if($student == 1){
+echo 'Student 1 is Sumon';
+}
+
+elseif($student == 1){
+    echo 'Student 1 is Sumon';
+}
+elseif($student == 2){
+    echo 'Student 2 is Tawfiq';
+}
+
+else{
+    echo "Record Absense";
+}
+
+
+
+
+#Next
+
+
+$stdlist = array('sumon','tawfiq','sabbir');
+
+foreach ($stdlist as $key) {
+    echo $key."<br>";
+}
+
+
+$stdlist = array(array('sumon','tawfiq','sabbir'),);
+
+#Next
+
+
+$stdlist = array('sumon','tawfiq','sabbir');
+$totstd = count($stdlist);
+
+for ($i = 0; $i < $totstd; $i++) {
+    echo $i;
+    echo $stdlist[$i]."<br>";
+}
+
+#next
+
+
+$CR = "present";
+
+if($CR == "present"){
+echo 'CR is Sumon';
+}
+
+else{
+    echo "Second CR is Sabbir in absense of main CR";
+}
+
+#Next
+
+
+switch ($student) {
+    case '1':
+        echo "Sumon";
+    break;
+    
+    case '2':
+        echo "Tawfiq";
+    break; 
+    
+    case '3':
+        echo "Sabbir";
+    break;
+
+    case '4':
+        echo "Naima";
+    break;
+
+
+    default:
+        echo "Data not Found";
+    break;
+}
+
+#Next
+
+
+switch ($student) {
+    case '1':
+        echo "Sumon";
+    break;
+    
+    case '2':
+        echo "Tawfiq";
+    break; 
+    
+    case '3':
+        echo "Sabbir";
+    break;
+
+    case '4':
+        echo "Naima";
+    break;
+
+
+    default:
+        echo "Data not Found";
+    break;
+}
+
+#Next
+
+
+$num = 0;
+
+# While Loop
+/*
+while ($num <= 10){
+    echo "I Love PHP <br>";
+    $num++;    
+}
+*/
+
+do {
+    echo "My Name Is : <br>";
+    $num++;
+} while ($num <= 10);
+
+
+?>
